@@ -1,0 +1,154 @@
+import React from "react";
+
+import "./js/script.js";
+import "./index.js";
+import "./js/srcEng.js"
+
+
+import { search } from "./js/srcEng.js";
+
+
+import "./App.css";
+import "./css/bootstrap.css";
+import "./css/style.css";
+
+
+import pic1 from "./posters/IMG_20220711_230134_426.jpg"
+import pic2 from "./posters/IMG_20220711_230142_609.jpg"
+import pic3 from "./posters/IMG_20220711_230151_369.jpg"
+import pic4 from "./posters/IMG_20220711_230220_200.jpg"
+import pic5 from "./posters/IMG_20220711_230227_261.jpg"
+import pic6 from "./posters/IMG_20220722_232450_162.jpg"
+
+
+
+
+const valueShit=null,color={
+  color: "#9d00ff"
+},
+navbar={
+  color: "#9d00ff",
+  backgroundColor: "#00000015",
+  width: "100vw"
+},
+containerFluid={
+  color: "#9d00ff",
+  backgroundColor: "#00000000"
+},
+navTglr={
+  color: "#9d00ff",
+  border: 0
+},inpStyle={
+  color: "#C0C0C0",
+  backgroundColor: "#0c0c0c",
+  outline: "none",
+  border: "1px solid #9d00ff50"
+},wholeSlyder={
+  maxWidth: "100vw",
+  marginTop: "10vw"
+},img={
+  pointerEvents: "none",
+  border: "none"
+},blockDisplay={
+  display: "block"
+};
+
+
+
+
+
+
+
+function App() {
+  return (
+    <React.Fragment>
+      <nav className="navbar navbar-dark fixed-top" style={navbar} >
+        <div className="container-fluid" style={containerFluid} >
+          <a style={color}  className="navbar-brand shitty-nme" href="/">purpleAnime</a>
+          
+            <div className="navbar-toggler" style={navTglr} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <i className="fa-solid fa-list-ul"></i>
+            </div>
+
+          <div  style={color} className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div style={color}  className="offcanvas-header">
+              <h5 style={color}  className="offcanvas-title" id="offcanvasDarkNavbarLabel">purpleAnime</h5>
+              <button style={color}  type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div style={color}  className="offcanvas-body">
+              <ul style={color}  className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li style={color}  className="nav-item">
+                  <a style={color}  className="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li style={color}  className="nav-item">
+                  <a style={color}  className="nav-link" href="https://www.youtube.com/channel/UCuMHHOSI5niZo-_aWZQRA7Q">YouThoob</a>
+                </li>
+                <li style={color}  className="nav-item dropdown">
+                  <a style={color}  className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Follow us
+                  </a>
+                  <ul style={color}  className="dropdown-menu dropdown-menu-dark">
+                    <li style={color} ><a className="dropdown-item" href="https://instagram.com/kakashi_69_bvf?igshid=YmMyMTA2M2Y="><i className="fa-brands fa-instagram"></i>&nbsp;Instagram</a></li>
+                    <li style={color} ><a className="dropdown-item" href="https://instagram.com/kakashi.java?igshid=YmMyMTA2M2Y="><i className="fa-brands fa-instagram"></i>&nbsp;Instagram</a></li>
+                    <li style={color} >
+                      <hr style={color}  className="dropdown-divider"/>
+                    </li>
+                    <li style={color} ><a className="dropdown-item" href="https://www.instagram.com/direct/t/340282366841710300949128295980138641074">Contact us</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <span style={color}  className="d-flex" role="search">
+                <input id="srcInp" value={valueShit} onChange={search} list="input" style={inpStyle} className="from-controle-me2" type="search" placeholder="Search" aria-label="Search"/>
+                <div style={color}  className="src-box"><i className="fa-solid fa-magnifying-glass" style={color} ></i></div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div style={blockDisplay}></div>
+    </React.Fragment>
+  );
+}
+export default App;
+
+export function Slyder() {
+  return (
+    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={wholeSlyder} >
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src={pic1} className="d-block w-100" alt="" style={img} />
+        </div>
+        <div className="carousel-item">
+          <img src={pic2} className="d-block w-100" alt="" style={img} />
+        </div>
+        <div className="carousel-item">
+          <img src={pic3} className="d-block w-100" alt="" style={img} />
+        </div>
+        <div className="carousel-item">
+          <img src={pic4} className="d-block w-100" alt="" style={img} />
+        </div>
+        <div className="carousel-item">
+          <img src={pic5} className="d-block w-100" alt="" style={img} />
+        </div>
+        <div className="carousel-item">
+          <img src={pic6} className="d-block w-100" alt="" style={img} />
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+  );
+}
+
+
+
+
+
+
+

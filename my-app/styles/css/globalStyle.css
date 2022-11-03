@@ -1,0 +1,66 @@
+body {
+    height: 140vh;
+    user-select: none;
+    background-color: #000000;
+    border: 0;
+    -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+	background-color: #000;
+    max-width: 100vw;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+
+header {
+    margin-bottom: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+
+
+div {
+    overflow-x: hidden;
+}
+table {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: #ff00fa;
+}
+
+
+
+.perResult > img {
+    aspect-ratio: 9/16;
+    max-height: 8rem;
+    overflow: hidden;
+    justify-self: center;
+    border: 1px solid #ff00fa50;
+    pointer-events: none;
+}
+
+
+footer {
+    height:max-content;
+ }
+
+
